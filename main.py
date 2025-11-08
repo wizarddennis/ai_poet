@@ -1,7 +1,7 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 
 import streamlit as st 
@@ -16,7 +16,7 @@ st.write("시의 주제:", content)
 
 
 
-load_dotenv()
+#load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")  # 환경 변수에서 API 키 가져오기
 
 #ChatOpenAI 클라이언트의 인스턴스 생성
